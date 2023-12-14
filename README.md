@@ -17,8 +17,11 @@ is the event that a document drawn from the distribution of documents contains a
 Applying Bayes’ Theorem gives us 
 $$ Pr(A|B) = \frac{Pr(B|A)Pr(A)}{Pr(B)}$$ 
 
+----------
 
-<b>Claim</b>: We can write this as
+### Claim
+A proportional likelihood value suffices for classification purposes and we
+don’t need to calculate the actual value of $Pr(A | B)$, So,
 $$Pr(A | B) \propto Pr(B | A) Pr(A)$$
 
 ### Proof
@@ -27,5 +30,7 @@ Since the denominator of Naive Bayes' Theorem $Pr(B)$ is constant for all catego
 
 Suppose $Pr(A_1) = \frac{P(B|A_1)Pr(A_1)}{Pr(B)} > Pr(A_2) = \frac{P(B|A_2)Pr(A_2)}{Pr(B)}$ \\
 Note that, if the numerator for $Pr(A_1) > $ $Pr(A_2)$, then the inequality will always hold. 
-So, $Pr(A_1) = {P(B|A_1)Pr(A_1)} > Pr(A_2) = {P(B|A_2)Pr(A_2)}$. It follows that regardless of the values of $Pr(B)$, the comparison is not affected that is why only the proportional likelihood is necessary for classification.\\
+So, $Pr(A_1) = {P(B|A_1)Pr(A_1)} > Pr(A_2) = {P(B|A_2)Pr(A_2)}$. It follows that regardless of the values of $Pr(B)$, the comparison is not affected that is why only the proportional likelihood is necessary for classification.
+
+
 
