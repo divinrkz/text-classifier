@@ -20,7 +20,7 @@ $$ Pr(A|B) = \frac{Pr(B|A)Pr(A)}{Pr(B)}$$
 ----------
 
 ### Claim
-A proportional likelihood value suffices for classification purposes and we
+A proportional likelihood value suffices for classification purposes, and we
 don’t need to calculate the actual value of $Pr(A | B)$, So,
 $$Pr(A | B) \propto Pr(B | A) Pr(A)$$
 
@@ -28,9 +28,9 @@ $$Pr(A | B) \propto Pr(B | A) Pr(A)$$
 Note that, when classifying, we are interested in comparing the likelihoods of  categories $C_k$ to determine which is most probable that is to determine which has the largest probability, not the actual values.\\
 Since the denominator of Naive Bayes' Theorem $Pr(B)$ is constant for all categories, it does not affect the comparison and thus can be ignored for classification. We use the numerator of the Bayes' theorem, to classify the document because it varies with the $C_k$.
 
-Suppose $Pr(A_1) = \frac{P(B|A_1)Pr(A_1)}{Pr(B)} > Pr(A_2) = \frac{P(B|A_2)Pr(A_2)}{Pr(B)}$ \\
+Suppose, $$Pr(A_1) = \frac{P(B|A_1)Pr(A_1)}{Pr(B)} > Pr(A_2) = \frac{P(B|A_2)Pr(A_2)}{Pr(B)}$$
 Note that, if the numerator for $Pr(A_1) > $ $Pr(A_2)$, then the inequality will always hold. 
-So, $Pr(A_1) = {P(B|A_1)Pr(A_1)} > Pr(A_2) = {P(B|A_2)Pr(A_2)}$. It follows that regardless of the values of $Pr(B)$, the comparison is not affected that is why only the proportional likelihood is necessary for classification.
+So, $$Pr(A_1) = {P(B|A_1)Pr(A_1)} > Pr(A_2) = {P(B|A_2)Pr(A_2)}$$. It follows that regardless of the values of $Pr(B)$, the comparison is not affected that is why only the proportional likelihood is necessary for classification.
 
 
 
