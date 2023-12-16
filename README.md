@@ -30,7 +30,18 @@ Since the denominator of Naive Bayes' Theorem $Pr(B)$ is constant for all catego
 
 Suppose, $$Pr(A_1) = \frac{P(B|A_1)Pr(A_1)}{Pr(B)} > Pr(A_2) = \frac{P(B|A_2)Pr(A_2)}{Pr(B)}$$
 Note that, if the numerator for $Pr(A_1) > $ $Pr(A_2)$, then the inequality will always hold. 
-So, $$Pr(A_1) = {P(B|A_1)Pr(A_1)} > Pr(A_2) = {P(B|A_2)Pr(A_2)}$$. It follows that regardless of the values of $Pr(B)$, the comparison is not affected that is why only the proportional likelihood is necessary for classification.
+So, $$Pr(A_1) = {P(B|A_1)Pr(A_1)} > Pr(A_2) = {P(B|A_2)Pr(A_2)}.$$ It follows that regardless of the values of $Pr(B)$, the comparison is not affected that is why only the proportional likelihood is necessary for classification.
 
+----------
+It turns out, real numbers are not stored exactly on computers. Instead, computers use a system called “floating
+point numbers” which is a standardized approximation of the real numbers and used everywhere. At a high
+level, floating point numbers are basically a binary version of scientific notation.
+To fix this underflow problem, we’re going to be taking the log of the probabilities and using those instead, like
+so: 
 
-
+$\begin{equation}
+Pr(A | B) \propto \left(\prod^{n}_{i=0}Pr\left(B_{w_{i}} | A\right)\right)
+ \newline
+log\left(Pr(A | B)\right) = log\left(\left(\prod^{n}_{i=0}Pr\left(B_{w_{i}} | A\right)\right)Pr(A) \right)
+\end{equation}
+$
