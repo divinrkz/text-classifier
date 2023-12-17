@@ -39,9 +39,13 @@ level, floating point numbers are basically a binary version of scientific notat
 To fix this underflow problem, we’re going to be taking the log of the probabilities and using those instead, like
 so: 
 
-$\begin{equation}
-Pr(A | B) \propto \left(\prod^{n}_{i=0}Pr\left(B_{w_{i}} | A\right)\right)
- \newline
-log\left(Pr(A | B)\right) = log\left(\left(\prod^{n}_{i=0}Pr\left(B_{w_{i}} | A\right)\right)Pr(A) \right)
+$
+\begin{equation}
+    \begin{split}
+Pr(A | B) &\propto \left(\prod^{n}_{i=0}Pr\left(B_{w_{i}} | A\right)\right)
+ \\
+log\left(Pr(A | B)\right) &= log\left(\left(\prod^{n}_{i=0}Pr\left(B_{w_{i}} | A\right)\right)Pr(A) \right) \\
+&= \left( \sum^{n}_{i=0} log(Pr\left(B_{w_{i}} | A\right))\right)+ log \left(Pr(A) \right)
+    \end{split}
 \end{equation}
 $
