@@ -39,6 +39,7 @@ level, floating point numbers are basically a binary version of scientific notat
 To fix this underflow problem, we’re going to be taking the log of the probabilities and using those instead, like
 so: 
 
+### Claim
 $
 \begin{equation}
     \begin{split}
@@ -49,3 +50,5 @@ log\left(Pr(A | B)\right) &= log\left(\left(\prod^{n}_{i=0}Pr\left(B_{w_{i}} | A
     \end{split}
 \end{equation}
 $
+
+### Proof
