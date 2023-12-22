@@ -72,3 +72,5 @@ Note that, $ln'(x) = \frac{1}{x}, \forall x \in (0, \infty)$. It follows that $\
 Since $c \in [x_1, x_2]$ and $x_1, x_2 > 0$, therefore $c > 0$. <br>
 It follows that, $\frac{1}{c} > 0 = \frac{ln(x_2) - ln(x_1)}{x_2 - x_1} > 0$. Since $x_2 > x_1$ by definition, $x_2 - x_1 > 0$ So, $ln(x_2) - ln(x_1) > 0 = ln(x_2) > ln(x_1)$<br>
 Therefore, $ln(x)$ is an increasing function.
+<br>
+<br>
