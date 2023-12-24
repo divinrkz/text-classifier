@@ -62,7 +62,6 @@ For subnormal values between range $(-\infty, 0)$, we have negative numbers so $
 For normal values between range $(-\infty, 0)$, we have negative numbers only so $s = 1$, and since by definition of normal numbers $e \neq 0, e \neq 0x7ff$ so, it has $2^{11} - 2$ different numbers, and so since the first bit of normal numbers is $1$ we can't have $0$ value of $f$ so we can have $2^{52}$ different numbers on f. so the  total subnormal total numbers in range $(-\infty, 0) = (2^{11} - 2) \times 2^{52}$ <br>
 Therefore the total values between range $(-\infty, 0) = (2^{52} - 1) + ((2^{11}-2) \times 2^{52})$
 
-
 I claim that $ln(x)$ is an increasing function. <br>
 Let $x_1, x_2 \in (0, \infty)$ such that $x_2 > x_1$. \\
 Suppose $ln(x)$ is continuous over $(0, \infty)$ and differentiable over $(0, \infty).$ <br>
