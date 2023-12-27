@@ -63,9 +63,9 @@ For normal values between range $(-\infty, 0)$, we have negative numbers only so
 Therefore the total values between range $(-\infty, 0) = (2^{52} - 1) + ((2^{11}-2) \times 2^{52})$
 
 I claim that $ln(x)$ is an increasing function. <br>
-Let $x_1, x_2 \in (0, \infty)$ such that $x_2 > x_1$. \\
+Let $x_1, x_2 \in (0, \infty)$ such that $x_2 > x_1$.
 Suppose $ln(x)$ is continuous over $(0, \infty)$ and differentiable over $(0, \infty).$<br>
-Since $x_1, x_2 \in (0, \infty)$, then $ln(x)$ is also continuous over $[x_1, x_2]$ and differentiable over $[x_1, x_2].$ <br>
+Since $x_1, x_2 \in (0, \infty)$, then $ln(x)$ is also continuous over $[x_1, x_2]$ and differentiable over $[x_1, x_2].$<br>
 By the Mean Value Theorem, there exists $c \in [x_1, x_2]$ such that $ln'(c) = \frac{ln(x_2) - ln(x_1)}{x_2 - x_1}$. <br>
 Not that, $ln'(x) = \frac{1}{x}, \forall x \in (0, \infty)$. It follows that $\frac{1}{c} = \frac{ln(x_2) - ln(x_1)}{x_2 - x_1}$. <br>
 Since $c \in [x_1, x_2]$ and $x_1, x_2 > 0$, therefore $c > 0$. <br>
