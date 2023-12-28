@@ -12,7 +12,9 @@ this is not necessarily the order of the words in the document). We can imagine 
 our purposes by the set $W$) was pulled from some ideal distribution of documents, and let $B_{word}$ be the event
 that a document pulled from this distribution contains word. Let $A$ be the event that our document is spam.
 In order to classify our document as spam or not spam, we want to find $Pr(A | B)$, where
-$`B =\bigcap_{i=0}^{n-1}B_{w_{i}}`$ 
+```math
+B =\bigcap_{i=0}^{n-1}B_{w_{i}}
+``` 
 is the event that a document drawn from the distribution of documents contains all of the words $W$.
 Applying Bayes’ Theorem gives us $`Pr(A|B) = \frac{Pr(B|A)Pr(A)}{Pr(B)}`$ 
 
