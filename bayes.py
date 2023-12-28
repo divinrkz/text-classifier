@@ -29,21 +29,26 @@ def train(dataset):
 def pr_category(category : str):
     """
     Computes Pr(category)
+    
     """
-    return 0
+    return (num_data_points_in_category[category] / num_data_points)
 
 @cache
 def pr_word_given_category(word : str, category : str, num_words_in_document : int): 
     """
     Computes Pr(word | category)
+    
     """
-    return 0
+    return ((count_of_word_by_category[category][word] + 1) / (num_data_points_in_category[category] + num_words_in_document))
 
 def log_pr_category_given_words(words : List[str], category : str):
     """
     Computes log(Pr(category | words))
     """
-    return 0
+    pr_word_given_category_sum = 0
+    for word in words:
+        pr_word_given_category_sum += log(pr_word_given_category(word, category, len(words)))
+    return pr_word_given_category_sum + log(pr_category(category))
 
 def predict(categories, words):
     best = None
