@@ -4,8 +4,6 @@ from math import log, inf
 from functools import cache
 from typing import List
 
-"""After training, model_dict is a global variable which is accessible inside this module"""
-
 @cache
 def tokenize(text):
     return [y for y in [re.sub('[^a-z0-9]', '', x) for x in text.lower().split(" ")]  if len(y)]
@@ -27,13 +25,6 @@ def train(dataset):
         for word in words:
             count_of_word_by_category[classification][word] += 1
 
-"""
-TODO - Implement the following functions.
-After training (which is run before your code), the following 3 global variables are available:
-    count_of_word_by_category[category][word] = Total number of documents in the category 'category' in which this word appears
-    num_data_points = Total number of documents in the data set
-    num_data_points_in_category[category] = Total number of documents in the category 'category'
-"""
 @cache
 def pr_category(category : str):
     """
