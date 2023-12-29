@@ -71,6 +71,6 @@ Since $c \in [x_1, x_2]$ and $x_1, x_2 > 0$, therefore $c > 0$. <br>
 It follows that, $\frac{1}{c} > 0 = \frac{ln(x_2) - ln(x_1)}{x_2 - x_1} > 0$. Since $x_2 > x_1$ by definition, $x_2 - x_1 > 0$ So, $ln(x_2) - ln(x_1) > 0 = ln(x_2) > ln(x_1)$<br>
 Therefore, $ln(x)$ is an increasing function.
 <br><br>
-Note that, this number of probabilities we can represent increases when we take the $log$ because when you take the logarithm of probabilities where the domain between $0$ and $1$ (inclusive), you map them to a range where floating-point numbers are alot(densely packed). Since I've showed that the range $(-\infty, 0)$ has more floating point values than range $(0,1)$.
+Note that, this number of probabilities we can represent increases when we take the $log$ because when you take the logarithm of probabilities where the domain between $0$ and $1$ (inclusive), you map them to a range where floating-point numbers are alot (densely packed). Since I've showed that the range $(-\infty, 0)$ has more floating point values than range $(0,1)$.
 This transformation to be valid $log$ has to be monotonic. 
-Observe that, suppose $p_1, p_2 \in [0,1]$ If probability $p_1 > p_2$ then $log(p_1) > log(p_2)$. Since comparisons are crucial for classification purposes, then log should be monotonic because it maintains the order of probabilities after transformation.
+Observe that, suppose $p_1, p_2 \in [0,1]$ If probability $p_1 > p_2$ then $log(p_1) > log(p_2)$. Since comparisons are crucial for classification purposes, then $log$ should be monotonic because it maintains the order of probabilities after transformation.
