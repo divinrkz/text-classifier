@@ -54,7 +54,7 @@ $
 ### Proof
 For subnormal values between range $(0, 1)$, $s$ has to be positive, so $s = 0, e = 0, f \neq 0$ by definition of subnormal. Since the first bit of $f$ is $0$ in subnormal values, every value of $f$ is going to be less than $1$ therefore all values of $f$ can be represented as $2^{52}$ different numbers. Since the subnormal values can never have $1$ as value of $f$ by definition of subnormal numbers, then we only need to exclude the representation of $0$. Therefore, number of subnormal values that can be represented are $2^{52} - 1$. <br>
 For normal values, $s = 0$, $e$ can be $2^{11} - 2$ different numbers, so for each $e$ we can have $2^{52}$ representation of $f$. By excluding 0, 1, by the rule of product, we can have a total of $(1022 \times 2^{52}) - 1$ numbers for normal values.
-So, in total we have $(2^{52}-1) + ((1022 \times 2^{52}) - 1)$ numbers in range $(0,1)$ 
+So, in total we have $(2^{52}-1) + ((1022 \times 2^{52}) - 1)$ numbers in range $(0,1)$
 <br>
 <br>
 For subnormal values between range $(-\infty, 0)$, we have negative numbers so $s = 1$ and $e = 0$ by definition of subnormal numbers. So, we have $2^52$ different numbers for $f$. Since we have to exclude $0$, then the subnormal total numbers in range $(-\infty, 0) = 2^{52} - 1$. <br>
