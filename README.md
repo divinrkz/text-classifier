@@ -50,7 +50,6 @@ log\left(Pr(A | B)\right) &= log\left(\left(\prod^{n}_{i=0}Pr\left(B_{w_{i}} | A
     \end{split}
 \end{equation}
 $
-
 ### Proof
 For subnormal values between range $(0, 1)$, $s$ has to be positive, so $s = 0, e = 0, f \neq 0$ by definition of subnormal. Since the first bit of $f$ is $0$ in subnormal values, every value of $f$ is going to be less than $1$ therefore all values of $f$ can be represented as $2^{52}$ different numbers. Since the subnormal values can never have $1$ as value of $f$ by definition of subnormal numbers, then we only need to exclude the representation of $0$. Therefore, number of subnormal values that can be represented are $2^{52} - 1$. <br>
 For normal values, $s = 0$, $e$ can be $2^{11} - 2$ different numbers, so for each $e$ we can have $2^{52}$ representation of $f$. By excluding 0, 1, by the rule of product, we can have a total of $(1022 \times 2^{52}) - 1$ numbers for normal values.
